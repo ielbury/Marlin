@@ -695,9 +695,9 @@
 #endif
 
 // Mechanical endstop with COM to ground and NC to Signal uses "false" here (most common setup).
-#define X_MIN_ENDSTOP_INVERTING false       // Set to true to invert the logic of the endstop.
-#define Y_MIN_ENDSTOP_INVERTING false       // Set to true to invert the logic of the endstop.
-#define Z_MIN_ENDSTOP_INVERTING false       // Set to true to invert the logic of the endstop.
+#define X_MIN_ENDSTOP_INVERTING true       // Set to true to invert the logic of the endstop.
+#define Y_MIN_ENDSTOP_INVERTING true       // Set to true to invert the logic of the endstop.
+#define Z_MIN_ENDSTOP_INVERTING true       // Set to true to invert the logic of the endstop.
 #define X_MAX_ENDSTOP_INVERTING false       // Set to true to invert the logic of the endstop.
 #define Y_MAX_ENDSTOP_INVERTING false       // Set to true to invert the logic of the endstop.
 #define Z_MAX_ENDSTOP_INVERTING false       // Set to true to invert the logic of the endstop.
@@ -722,19 +722,19 @@
 #define X_DRIVER_TYPE TMC2100
 #define Y_DRIVER_TYPE TMC2100
 #define Z_DRIVER_TYPE TMC2100
-//#define X2_DRIVER_TYPE A4988
-//#define Y2_DRIVER_TYPE A4988
+//#define X2_DRIVER_TYPE TMC2100
+//#define Y2_DRIVER_TYPE TMC2100
 #define Z2_DRIVER_TYPE TMC2100
-//#define Z3_DRIVER_TYPE A4988
-//#define Z4_DRIVER_TYPE A4988
+//#define Z3_DRIVER_TYPE TMC2100
+//#define Z4_DRIVER_TYPE TMC2100
 #define E0_DRIVER_TYPE TMC2100
-//#define E1_DRIVER_TYPE A4988
-//#define E2_DRIVER_TYPE A4988
-//#define E3_DRIVER_TYPE A4988
-//#define E4_DRIVER_TYPE A4988
-//#define E5_DRIVER_TYPE A4988
-//#define E6_DRIVER_TYPE A4988
-//#define E7_DRIVER_TYPE A4988
+//#define E1_DRIVER_TYPE TMC2100
+//#define E2_DRIVER_TYPE TMC2100
+//#define E3_DRIVER_TYPE TMC2100
+//#define E4_DRIVER_TYPE TMC2100
+//#define E5_DRIVER_TYPE TMC2100
+//#define E6_DRIVER_TYPE TMC2100
+//#define E7_DRIVER_TYPE TMC2100
 
 // Enable this feature if all enabled endstop pins are interrupt-capable.
 // This will remove the need to poll the interrupt pins, saving many CPU cycles.
@@ -846,8 +846,8 @@
  */
 //#define CLASSIC_JERK
 #if ENABLED(CLASSIC_JERK)
-#define DEFAULT_XJERK 6.0
-#define DEFAULT_YJERK 6.0
+#define DEFAULT_XJERK 8.0
+#define DEFAULT_YJERK 8.0
 #define DEFAULT_ZJERK 0.3
 
 //#define TRAVEL_EXTRA_XYJERK 0.0     // Additional jerk allowance for all travel moves
